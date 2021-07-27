@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    background: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    background: #1C1A1A;
+    border-radius: 20%;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 0 10px #4c4c4c;
+}
+
+.logo-wrap {
+    width: 220px;
+    height: 330px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.item.one {
+    border-radius: 50% 0 0 50%;
+    background: linear-gradient(180deg, rgba(255,58,0,1) 0%, rgba(255,119,0,1) 100%);
+}
+
+.two {
+    border-radius: 0 50% 50% 0;
+    background: linear-gradient(180deg, rgba(255,101,100,1), rgba(254,113,98,1));
+}
+
+.three {
+    border-radius: 50% 0 0 50%;
+    background: linear-gradient(180deg, rgba(130,0,255,1), rgba(189,8,255,1));
+}
+
+.four {
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(130,0,255,1), rgba(1,20,255,1));
+}
+
+.five {
+    border-radius: 50% 0 50% 50%;
+    background: linear-gradient(180deg, rgba(0,228,137,1), rgba(0,254,104,1));
+}
+
+@media (max-width: 543px) {
+    .content {
+        width: 400px;
+        height: 400px;
+    }
+    .logo-wrap {
+        width: 164px;
+        height: 254px;
+    }
+}
+
+@media (max-width: 425px) {
+    .content {
+        width: 300px;
+        height: 300px;
+    }
+    .logo-wrap {
+        width: 122px;
+        height: 188px;
+    }
+}
